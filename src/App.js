@@ -84,6 +84,8 @@ const App = () => {
             price = {producto.price}
             img={producto.img}
             rating= {producto.rating}
+            isAvailable = {producto.isAvailable}
+            onSale = {producto.onSale}
             />
         })
       } 
