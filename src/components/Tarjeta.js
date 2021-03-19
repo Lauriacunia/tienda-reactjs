@@ -12,7 +12,7 @@ const Tarjeta = ({ title, type, price, img, rating, isAvailable, onSale }) => {
     <article className="tarjeta">
       { isAvailable|| <div className="overlay"></div> }
       <img src={img} />
-      <h1> {title}</h1>
+      <h1> {title} {onSale && <span>  ON SALE!</span>}</h1>
       <h3>{type}</h3>
       <h3>{price}</h3>
       {/*<Rating value={rating} /> */}

@@ -77,8 +77,9 @@ const App = () => {
       <div className="contenedor-tarjetas">
 
       {
-        products.map(producto => {
+        products.map((producto, index) => {
           return <Tarjeta
+            key={index}
             title={producto.title} 
             type = {producto.type}
             price = {producto.price}
