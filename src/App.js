@@ -1,6 +1,7 @@
 import './App.scss';
 import Tarjeta from './components/Tarjeta';
 
+
 const products = [
   {
     title: 'Coombes',
@@ -72,19 +73,22 @@ const App = () => {
   
   const mostrarTarjetas = false 
   return (
-    <div className="contenedor-tarjetas">
 
-    {
-      products.map(producto => {
-        return <Tarjeta
-          title={producto.title} 
-          type = {producto.type}
-          price = {producto.price}
-          img={producto.img}
-          />
-      })
-    } 
-    </div>
+      <div className="contenedor-tarjetas">
+
+      {
+        products.map(producto => {
+          return <Tarjeta
+            title={producto.title} 
+            type = {producto.type}
+            price = {producto.price}
+            img={producto.img}
+            rating= {producto.rating}
+            />
+        })
+      } 
+      </div>
+    
   );
 }
 

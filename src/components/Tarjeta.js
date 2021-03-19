@@ -1,6 +1,7 @@
 import './Tarjeta.scss';
+import Rating from './Rating';
 
-const Tarjeta = ({title, type, price, img }) => {
+const Tarjeta = ({title, type, price, img, rating }) => {
   console.log(`props de Tarjeta ${title} ${type} ${price} ${img} `);
 
   const mostrarTitulo = true;
@@ -12,6 +13,7 @@ const Tarjeta = ({title, type, price, img }) => {
       <h1> {title}</h1>
       <h3>{type}</h3>
       <h3>{price}</h3>
+      <Rating value={rating} />
 
     </article>
   );
